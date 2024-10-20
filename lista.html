@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/list.css">   
+    <title>Lista de Usuários</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="inicio.html">Administração</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="lista.html">Lista de Usuários <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Mais opções
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="inicio.html">Menu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cadastro.html">Cadastro de Usuários</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item active" href="index.html">Sair</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-5 flex-grow-1">
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NOME</th>
+                <th scope="col">EMAIL</th>
+                <th scope="col">CELULAR</th>
+                <th scope="col">NIVEL</th>
+                <th scope="col">Ações </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Atilio</td>
+                <td>admadm@gmail.com</td>
+                <td>(58)99871-3468</td>
+                <td>Administrador</td>
+                <td><button class="excluir">Excluir</button><button class="editar">Editar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Daniel</td>
+                <td>martin@gmail.com</td>
+                <td>(14)99908-9814</td>
+                <td>Administrador</td>
+                <td><button class="excluir">Excluir</button><button class="editar">Editar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Ronaldinho</td>
+                <td>ronaldo@gmail.com</td>
+                <td>(11)99678-0967</td>
+                <td>Usuário</td>
+                <td><button class="excluir">Excluir</button><button class="editar">Editar</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <footer class="footer py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="mb-0">© 2024 Daniel Martins e Atilio Krugner.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a href="#" class="me-3">Sobre nós</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+</html>
